@@ -1,0 +1,27 @@
+// // GET Articles
+// GET articles every 30 mins from the NewsAPI
+// Filter array with "relevance" above 100.
+// Check if the objects of array is already in the database, if not put it in the database
+// Save last GET time
+
+// // Sharing the news with number figures and record level
+// Skip if the title has following keywords on the title: ["plummet", "drop below", "plunging", "drops more than", "dips below", "dropped below", "climbs", "jumps to", "jumps above", "jumps back above", "weekly losses", "spiked above", "falls towards", "swoons below"]
+// Skip if the title has the price and not record keywords.
+// Share no matter what if the title has keywords: "record high", "record low".
+
+// // General tweet rules
+// Never tweet before 20 mins except if it is a record news
+// Share the most relevance record news most 2 every 24 hours and tweet immediately.
+// Dynamic tweet scheduling, total awaiting tweets of last 18 hours / 24 hours.
+// Share the tweet if not more than 24 hours old
+// First share the tweet with highest relevance
+
+// // Database rules
+// Mark tweeted after tweeting.
+// Mark tweets old if older than 24 hours and not tweeted
+// Mark shareImmediately for the record news.
+
+// // Express API rules
+// See all tweets with GET
+// See a tweet with GET
+// Remove a tweet from database with DELETE

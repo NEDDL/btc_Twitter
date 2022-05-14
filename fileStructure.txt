@@ -1,0 +1,7 @@
+src/
+|--- api/
+    |--- v1/
+        |--- config/
+        |--- helpers/
+        |--- models/
+        |--- routes/
