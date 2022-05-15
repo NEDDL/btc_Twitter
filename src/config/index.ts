@@ -92,9 +92,9 @@ const TWITTER_API = {
 
 // Settings
 const minShareFrequency = 8; // In minutes
-const fetchFrequency = 48; // In hours
+const fetchFrequency = 24; // In hours
 const cronFrequency = 1; // In minutes not working currently
-const latestTweetsDays = 3; // In days
+const latestTweetsDays = 1; // In days
 
 const SETTINGS = {
   minShareFrequency,

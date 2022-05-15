@@ -20,10 +20,14 @@ const getNews = async (lastFetched: any, setLastFetched: any) => {
   const now = moment();
   const difference = moment(now).diff(lastFetched, "hours");
   debug(`Last fetched: ${difference} hours ago...`);
-  if (difference <= fetchFrequency)
+  debug(
+    `Difference: ${difference}: ${typeof difference}, fetchFrequency: ${fetchFrequency}: ${typeof fetchFrequency}`
+  );
+  if (difference < fetchFrequency) {
     return debug(
       `Get news initiation stopped because the frequency is ${fetchFrequency} hours.`
     );
+  }
 
   try {
     debug("News API called...");
