@@ -5,7 +5,7 @@ const TweetSchema: Schema = new Schema(
   {
     _id: { type: String, required: true },
     dateTimePub: { type: String, required: true },
-    sentiment: { type: Number, required: true },
+    sentiment: { type: Number, required: false },
     url: { type: String, required: true },
     title: { type: String, required: true },
     image: { type: String, required: true },
